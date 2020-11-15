@@ -1,10 +1,9 @@
 # Experimental Tutorial
 
-Animation, while not required for a website, is something that can help make a site have that extra *flair* that draws a user in and keeps them scrolling. 
-You can spend hours upon hours creating a beautiful layout with stunning images and designing a sharp typography design, all in the pursuit of making a website look great. Animations are what help it *feel* great.
+Animation is something that can help make a site have some extra *flair* that draws a user in and keeps them scrolling. Static websites are great, don't misunderstand. You can spend hours upon hours creating a beautiful layout with stunning images and a sharp typography design, all in the pursuit of making a website look great. Animations, however, are what help it *feel* great.
 
-Here, I am going to show you how to make two different elements for a website with compelling (and cool) animations - a parallax image header and a timeline that reveals its contents after the user scrolls onto them. 
-This tutorial does assume basic understanding of HTML/CSS and Javascript, so assuming you at least know your way around the basics, let's get started.  
+Here, I am going to show you how to make two different elements for a website with compelling (and cool) animations - a parallax image header and a timeline that fades-in its contents after the user scrolls onto them. 
+This tutorial does assume basic understanding of HTML/CSS and Javascript. So, assuming you at least know your way around the basics, let's get started.  
 
 <div align="center">
   <img src="https://cdn.acodez.in/wp-content/uploads/2018/01/Website-Animation-When-and-How-to-Use-It.png" />  
@@ -24,7 +23,7 @@ A parallax image is one that gives a sense of perspective as you scroll by makin
 
 The first and most crucial part of this is having your artwork separated into different layers; each layer will be a different distance away from the "camera." Of course, this is easiest if the picture you're using has already been separated into its own layers, like a digitial painting. In my case, however, the one I wanted to use was something that had already been flattened into a single image.
 
->Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. So, if that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! *(It's a bit older and uses an outdated version of Photoshop, but the process is still the same as today).*
+>###### Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. So, if that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! It's a bit older and uses an outdated version of Photoshop, but the process is still the same as today.
 
 For this tutorial, I've already separated and provided the layers needed. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery). 
 

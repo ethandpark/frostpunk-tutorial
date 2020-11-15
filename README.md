@@ -172,7 +172,7 @@ movement = -(topDistance * depth);
 ```
 <br />
 
-The final step is to update the final value of movement to each layer's CSS paramater *"transform translate3d,"* giving it its own 'location,' in a sort of 3d sense.
+The final step is to update the final movement value to each layer's CSS paramater *"transform translate3d,"* giving it its own 'location,' in a sort of 3d sense.
 
 ```
  translate3d = 'translate3d(0, ' + movement + 'px, 0)';
@@ -206,4 +206,28 @@ All in all, your JS code should look about like this:
     });
 }).call(this);
 ```
-Not too bad, right? It looks a little crazy at first glance, but broken down makes a lot more sense.
+<br />
+
+Now we can go back to the HTML and mess around with the *"data-depth"* values until we're happy with the results.
+Note that when you're working with an image that you had to manually separate layers for in an external photo-editor like Photoshop, this can get a little finicky. You may have to do a little bit of extra work in your software and add some content-aware "filler" to make sure that when the page scrolls, the image doesn't leave empty space when it is transformed. 
+You can see this in the images I've supplied for this tutorial - many of them (especially the more background ones) have clearly had a lot of [clone-stamping](https://helpx.adobe.com/photoshop/how-to/clone-stamp-remove-object.html) done to them, though it's only obvious when looking at the layer by itself. If that clone-stamping had not been done, those parts of the image would have been totally transparent and the parallax illusion would be broken, since the background color of the site would have shown through those spots.
+
+If that doesn't make much sense, you can see what I mean by using these images and setting each data-depth at intervals of one tenth (so .10, .20, .30, etc.). It gets funky, and not in a good way.
+
+On that note, for these images, here's what my HTML ended up looking like:
+
+```
+<div id="main-banner">
+   <div class="layer-1 layer" data-depth="0.05" data-type="parallax"></div>
+   <div class="layer-2 layer" data-depth="0.1" data-type="parallax"></div>
+   <div class="layer-3 layer" data-depth="0.15" data-type="parallax"></div>
+   <div class="layer-4 layer" data-depth="0.25" data-type="parallax"></div>
+   <div class="layer-5 layer" data-depth="0.35" data-type="parallax"></div>
+   <div class="layer-6 layer" data-depth="0.60" data-type="parallax"></div>
+   <div class="layer-7 layer" data-depth="0.70" data-type="parallax"></div>
+   <div class="layer-8 layer" data-depth="0.80" data-type="parallax"></div>
+   <div class="layer-9 layer" data-depth="0.90" data-type="parallax"></div>
+</div>
+```
+
+Again, if you have direct access to the artwork you're using and can manipulate the layers directly, then you're already streets ahead. It is possible to take any random image from Google and make it work, but as you can see, it's a much more involved process.

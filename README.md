@@ -27,6 +27,7 @@ The first and most crucial part of this is having your artwork separated into di
 
 For this tutorial, I've provided a sample image with the layers already separated. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery).  
 Please note that the imagery in this tutorial does **not** belong to me in any way and total ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/). 
+
 Also, remember to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
   
 <br />  

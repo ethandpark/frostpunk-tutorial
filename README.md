@@ -33,8 +33,8 @@ Please note that the imagery in this tutorial does **not** belong to me in any w
 <br />  
   
 Alright, with that out of the way, let's start coding.
-  
-<br />  
+
+---
   
 ### Initial Setup
 

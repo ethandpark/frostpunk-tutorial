@@ -20,14 +20,14 @@ A parallax image is one that gives a sense of perspective as you scroll by makin
 The first and most important piece of this is having your artwork separated into different layers, which each layer being a different distance away from the "camera" position. Of course, this is easiest if the image was something like a digital painting with everything already nicely separated. In my case, however, the image I wanted to use was just one from the internet.
 
 >Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. So, if that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! *(It's a bit older and uses an outdated version of Photoshop, but the process is still the same as today).* 
-
+<br />
 For this tutorial, I've provided an image that has already been separated into its own layers. (My layer cutting wasn't perfect, but that's because this focuses more on the code and less on the imagery). 
 
-**A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!**
+*A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!*
 
 <br />
 
-### Basic Setup
+### Initial Setup
 
 The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class 'layer.' We're also going to give each div a data-type attribute with the value "parallax."
 
@@ -85,6 +85,7 @@ Now that that's done, it's time to add the actual imagery. We need to create a c
 }
 // etc.
 ```
+<br />
 
 After that, return to the HTML and update each layer div with the proper class. The first layer will be the background and the rest will stack on top of each other accordingly.
 
@@ -97,3 +98,5 @@ After that, return to the HTML and update each layer div with the proper class. 
         etc.
 </div>
 ```
+<br />
+

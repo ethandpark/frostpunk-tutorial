@@ -26,8 +26,8 @@ The first and most crucial part of this is having your artwork separated into di
 >###### Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. If that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! It's a bit older and uses an outdated version of Photoshop, but the process is still the same with today's versions.
 
 For this tutorial, I've provided a sample image with the layers already separated. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery).  
-Please note that the imagery in this tutorial does **not** belong to me in any way and total ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/).
-Make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
+Please note that the imagery in this tutorial does **not** belong to me in any way and total ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/). 
+Also, remember to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
   
 <br />  
    

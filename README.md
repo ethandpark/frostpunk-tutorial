@@ -8,6 +8,7 @@ This tutorial does assume basic understanding of HTML/CSS and Javascript, so ass
 
 <div align="center">
   <img src="https://cdn.acodez.in/wp-content/uploads/2018/01/Website-Animation-When-and-How-to-Use-It.png" />
+  <p>https://acodez.in/animation-website-design/</p>
 </div>
   
 ## Element 1 - Parallax Header Image

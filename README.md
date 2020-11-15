@@ -118,7 +118,7 @@ Let's start by adding the ability to check if the user is scrolling.
 
 }).call(this);
 ```
-Here, *EventTarget.addEventListener()* registers the specified listener on the event target it’s called on. This target could be any element in the site, the entire site itself, or any other object that supports events.
+>###### Here, *EventTarget.addEventListener()* registers the specified listener on the event target it’s called on. This target could be any element in the site, the entire site itself, or any other object that supports events.
 
 <br />
 

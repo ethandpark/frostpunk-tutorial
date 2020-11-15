@@ -4,10 +4,10 @@ Animation, while not required for a website, is something that can help make a s
 You can spend hours upon hours creating a beautiful layout with stunning images and designing a sharp typography design, all in the pursuit of making a website look great. Animations are what help it *feel* great.
 
 Here, I am going to show you how to make two different elements for a website with compelling (and cool) animations - a parallax image header and a timeline that reveals its contents after the user scrolls onto them. 
-This tutorial does assume basic understanding of HTML/CSS and Javascript, so assuming you at least know your way around the basics, let's get started.
-
-
-
+This tutorial does assume basic understanding of HTML/CSS and Javascript, so assuming you at least know your way around the basics, let's get started.  
+  
+  
+  
 ## Element 1 - Parallax Header Image
 
 A parallax image is one that gives a sense of perspective as you scroll by making different layers of the image scroll at faster or slower speeds.
@@ -18,7 +18,7 @@ The first and most important piece of this is having your artwork separated into
 
 For this tutorial, I've provided an image that has already been separated into its own layers. (My layer cutting wasn't perfect, but that's because this focuses more on the code and less on the imagery). 
 
->**A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
+**A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
 
 HTML
 

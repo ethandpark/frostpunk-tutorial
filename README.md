@@ -55,6 +55,8 @@ Now it's time to add some basic styling. We'll start with the parent container.
 }
 ```
 
+
+
 We'll also add styling for the 'layer' class. Two key things here are that they need to be the same height as #main-banner and have a position: fixed. 
 
 ```

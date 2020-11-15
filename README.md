@@ -34,7 +34,6 @@ Please note that the imagery in this tutorial does **not** belong to me in any w
    
 Alright, with that out of the way, let's start coding.
 
----
   
 ### Initial Setup
 

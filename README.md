@@ -138,10 +138,22 @@ After that, we can take each layer and store it into a variable called *'layers.
 ```
 <br />
 
-Now that that's done, we'll need to go back to our HTML and make one more change. Each layer needs to have a new value called *"data-depth"* specified. This is what controls how much or how little each layer moves as the user scrolls. 
+Now that that's done, we'll need to go back to our HTML and make one more change. Each layer needs to specify a new value called *"data-depth."* This is what controls how much or how little each layer moves as the user scrolls. Don't worry about the actual value for now though, we'll come back to it in a second.
 
-Before actually going back to the HTML, however, we'll begin by making something to loop through all the layers and apply the necessary *transform* to each, according to where the user has scrolled to.
-We'll create a *for* loop and start it by creating a variable where we'll store our layers. Then, we'll have it take the aforementioned *"data-depth"* value that's going to go in the HTML.
+```
+<div id="main-banner">
+        <div class="layer-1 layer" data-depth="0.10" data-type="parallax"></div>
+        <div class="layer-2 layer" data-depth="0.20" data-type="parallax"></div>
+        <div class="layer-3 layer" data-depth="0.30" data-type="parallax"></div>
+        
+        etc.
+</div>
+```
+<br />
+
+Let's go back to our JS now to get that new value set up. We'll begin by making something to loop through all the layers and apply the necessary *transform* to each, according to where the user has scrolled to.
+
+Let's create a *for* loop and start it by creating a variable where we'll store our layers. Then, we'll have it take the aforementioned *"data-depth"* value.
 
 ```
   var depth, layer, _i, _len;
@@ -153,7 +165,7 @@ We'll create a *for* loop and start it by creating a variable where we'll store 
   ```
   <br />
   
- After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallax-ing. All values less than 100 (or 1.0) will have a parallax effect that increases as the value decreases.
+After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallax-ing. All values less than 100 (or 1.0) will have a parallax effect that increases as the value decreases.
 
 ```
 movement = -(topDistance * depth);

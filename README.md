@@ -6,7 +6,10 @@ You can spend hours upon hours creating a beautiful layout with stunning images 
 Here, I am going to show you how to make two different elements for a website with compelling (and cool) animations - a parallax image header and a timeline that reveals its contents after the user scrolls onto them. 
 This tutorial does assume basic understanding of HTML/CSS and Javascript, so assuming you at least know your way around the basics, let's get started.  
   
-![animation](https://cdn.acodez.in/wp-content/uploads/2018/01/Website-Animation-When-and-How-to-Use-It.png)
+
+<p align="center">
+  <img src="https://cdn.acodez.in/wp-content/uploads/2018/01/Website-Animation-When-and-How-to-Use-It.png" />
+</p>
   
 ## Element 1 - Parallax Header Image
 

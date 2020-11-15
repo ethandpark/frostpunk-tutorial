@@ -25,7 +25,7 @@ For this tutorial, I've provided an image that has already been separated into i
 
 **A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!**
 
-HTML
+<br />
 
 The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class 'layer.' We're also going to give each div a data-type attribute with the value "parallax."
 
@@ -44,6 +44,7 @@ The HTML section of this is actually pretty simple. We're going to create a pare
         <div class="layer" data-type="parallax"></div>
 </div>
 ```
+<br />
 
 Now it's time to add some basic styling. We'll start with the parent container.
 
@@ -54,8 +55,7 @@ Now it's time to add some basic styling. We'll start with the parent container.
     position: relative;
 }
 ```
-
-
+<br />
 
 We'll also add styling for the 'layer' class. Two key things here are that they need to be the same height as #main-banner and have a position: fixed. 
 
@@ -70,6 +70,7 @@ We'll also add styling for the 'layer' class. Two key things here are that they 
     z-index: -1;
 }
 ```
+<br />
 
 Now that that's done, it's time to add the actual imagery. We need to create a class for each individual layer and place the URL of that image inside the "background-image" property.
 

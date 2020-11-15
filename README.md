@@ -36,7 +36,7 @@ With that out of the way, let's start coding.
 
 ### Initial Setup
 
-The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class "layer." We're also going to give each div a data-type attribute with the value "parallax."
+* The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class "layer." We're also going to give each div a data-type attribute with the value "parallax."
 
 ```
 <div id="main-banner">
@@ -55,7 +55,7 @@ The HTML section of this is actually pretty simple. We're going to create a pare
 ```
 <br />
 
-Now it's time to add some basic styling. We'll start with the parent container. The *height* should be whatever your image is.
+* Now it's time to add some basic styling. We'll start with the parent container. The *height* should be whatever your image is.
 
 ```
 #main-banner {
@@ -66,7 +66,7 @@ Now it's time to add some basic styling. We'll start with the parent container. 
 ```
 <br />
 
-We'll also add styling for the 'layer' class. Two key things here are that they need to be the same height as #main-banner and have a position: fixed. 
+* We'll also add styling for the 'layer' class. Two key things here are that they need to be the same height as #main-banner and have a position: fixed. 
 
 ```
 .layer {
@@ -81,7 +81,7 @@ We'll also add styling for the 'layer' class. Two key things here are that they 
 ```
 <br />
 
-Now that that's done, it's time to add the actual imagery. We need to create a class for each individual layer and place the URL of that image inside the "background-image" property.
+* Now that that's done, it's time to add the actual imagery. We need to create a class for each individual layer and place the URL of that image inside the "background-image" property.
 
 ```
 .layer-1 {
@@ -94,7 +94,7 @@ Now that that's done, it's time to add the actual imagery. We need to create a c
 ```
 <br />
 
-After that, return to the HTML and update each layer div with the proper class. The first layer will be the background and the rest will stack on top of each other accordingly.
+* After that, return to the HTML and update each layer div with the proper class. The first layer will be the background and the rest will stack on top of each other accordingly.
 
 ```
 <div id="main-banner">
@@ -109,7 +109,7 @@ After that, return to the HTML and update each layer div with the proper class. 
 
 ### Animating with Javascript
 
-The first step to making this into an animation begins with Javascript. All of the Javascript for this element will go in one singular function. 
+* The first step to making this into an animation begins with Javascript. All of the Javascript for this element will go in one singular function. 
 Let's start by adding the ability to check if the user is scrolling.
 
 ```
@@ -122,7 +122,7 @@ Here, *EventTarget.addEventListener()* registers the specified listener on the e
 
 <br />
 
-Now we need to store the number of pixels that the site has been scrolled into the *topDistance* variable. We can use *pageYOffset* for this.
+* Now we need to store the number of pixels that the site has been scrolled into the *topDistance* variable. We can use *pageYOffset* for this.
 ```
   window.addEventListener(‘scroll’, function(event) {
     var topDistance;
@@ -131,7 +131,7 @@ Now we need to store the number of pixels that the site has been scrolled into t
 ```
 <br />
 
-After that, we can take each layer and store it into a variable called *'layers.'* We can do this with *querySelectorAll* and the data-attribute that we put inside our HTML earlier. So far, our function should look something like this:
+* After that, we can take each layer and store it into a variable called *'layers.'* We can do this with *querySelectorAll* and the data-attribute that we put inside our HTML earlier. So far, our function should look something like this:
 
 ```
 (function() {
@@ -145,7 +145,7 @@ After that, we can take each layer and store it into a variable called *'layers.
 ```
 <br />
 
-Now that that's done, we'll need to go back to our HTML and make one more change. Each layer needs to specify a new value called *"data-depth."* This is what controls how much or how little each layer moves as the user scrolls. Don't worry about the actual value for now though, we'll come back to it in a second.
+* Now that that's done, we'll need to go back to our HTML and make one more change. Each layer needs to specify a new value called *"data-depth."* This is what controls how much or how little each layer moves as the user scrolls. Don't worry about the actual value for now though, we'll come back to it in a second.
 
 ```
 <div id="main-banner">
@@ -158,7 +158,7 @@ Now that that's done, we'll need to go back to our HTML and make one more change
 ```
 <br />
 
-Let's go back to our JS now to get that new value set up. We'll begin by making something to loop through all the layers and apply the necessary *transform* to each, according to where the user has scrolled to.
+* Let's go back to our JS now to get that new value set up. We'll begin by making something to loop through all the layers and apply the necessary *transform* to each, according to where the user has scrolled to.
 
 Let's create a *for* loop and start it by creating a variable where we'll store our layers. Then, we'll have it take the aforementioned *"data-depth"* value.
 
@@ -172,14 +172,14 @@ Let's create a *for* loop and start it by creating a variable where we'll store 
   ```
   <br />
   
-After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallaxing. All values less than 1.0 will have a parallax effect that *increases* as the value *decreases.*
+* After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallaxing. All values less than 1.0 will have a parallax effect that *increases* as the value *decreases.*
 
 ```
 movement = -(topDistance * depth);
 ```
 <br />
 
-The final step is to update the final movement value to each layer's CSS paramater *"transform translate3d,"* giving it its own 'location,' in a sort of 3d sense.
+* The final step is to update the final movement value to each layer's CSS paramater *"transform translate3d,"* giving it its own 'location,' in a sort of 3d sense.
 
 ```
  translate3d = 'translate3d(0, ' + movement + 'px, 0)';
@@ -191,7 +191,7 @@ The final step is to update the final movement value to each layer's CSS paramat
 ```
 <br />
 
-All in all, your JS code should look about like this:
+* All in all, your JS code should look about like this:
 
 ```
 (function() {

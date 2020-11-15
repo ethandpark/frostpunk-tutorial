@@ -23,7 +23,7 @@ The first and most important piece of this is having your artwork separated into
 
 For this tutorial, I've provided an image that has already been separated into its own layers. (My layer cutting wasn't perfect, but that's because this focuses more on the code and less on the imagery). 
 
-**A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
+**A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!**
 
 HTML
 

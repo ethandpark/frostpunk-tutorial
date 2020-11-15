@@ -112,6 +112,7 @@ Let's start by adding the ability to check if the user is scrolling.
 }).call(this);
 ```
 Here, the EventTarget.addEventListener() method registers the specified listener on the event target it’s called on. This target could be any element in the site, the entire site itself, or any other object that supports events.
+
 <br />
 
 Now we need to store the number of pixels that the site has been scrolled into the *topDistance* variable. We can use *pageYOffset* for this. Your code should now look something like this:

@@ -124,7 +124,7 @@ Now we need to store the number of pixels that the site has been scrolled into t
 ```
 <br />
 
-After that, we can take each layer and store it into a variable called *'layers.'* We can do this with *querySelectorAll* and the data-attribute that we put inside our HTML earlier.
+After that, we can take each layer and store it into a variable called *'layers.'* We can do this with *querySelectorAll* and the data-attribute that we put inside our HTML earlier. So far, our function should look something like this:
 
 ```
 (function() {

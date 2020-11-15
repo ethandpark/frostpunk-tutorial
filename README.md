@@ -27,6 +27,8 @@ For this tutorial, I've provided an image that has already been separated into i
 
 <br />
 
+### Basic Setup
+
 The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class 'layer.' We're also going to give each div a data-type attribute with the value "parallax."
 
 ```

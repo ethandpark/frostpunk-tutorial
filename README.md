@@ -10,7 +10,7 @@ This tutorial does assume basic understanding of HTML/CSS and Javascript, so ass
   <img src="https://cdn.acodez.in/wp-content/uploads/2018/01/Website-Animation-When-and-How-to-Use-It.png" />  
 </div>
 <sub><sup>https://acodez.in/animation-website-design/</sub></sup>
-<br />
+ <br />
   
 ## Element 1 - Parallax Header Image
 

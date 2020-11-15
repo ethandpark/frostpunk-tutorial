@@ -165,7 +165,7 @@ Let's create a *for* loop and start it by creating a variable where we'll store 
   ```
   <br />
   
-After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallax-ing. All values less than 100 (or 1.0) will have a parallax effect that increases as the value decreases.
+After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallaxing. All values less than 1.0 will have a parallax effect that *increases* as the value *decreases.*
 
 ```
 movement = -(topDistance * depth);
@@ -206,3 +206,4 @@ All in all, your JS code should look about like this:
     });
 }).call(this);
 ```
+Not too bad, right? It looks a little crazy at first glance, but broken down makes a lot more sense.

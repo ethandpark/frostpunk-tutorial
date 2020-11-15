@@ -77,10 +77,10 @@ We'll also add styling for the 'layer' class. Two key things here are that they 
 Now that that's done, it's time to add the actual imagery. We need to create a class for each individual layer and place the URL of that image inside the "background-image" property.
 
 ```
-.layer-01 {
+.layer-1 {
    background-image: url(‘input_link_to_image_here');
 }
-.layer-02 {
+.layer-2 {
    background-image: url(‘input_link_to_image_here');
 }
 // etc.

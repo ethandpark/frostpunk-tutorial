@@ -14,7 +14,7 @@ This tutorial does assume basic understanding of HTML/CSS and Javascript. So, as
   
 ## Element 1 - Parallax Header Image
 
-A parallax image is one that gives a sense of perspective as you scroll by making different layers of the image scroll at faster or slower speeds.
+A parallax image is one that gives a sense of perspective by making different layers of the image scroll at faster or slower speeds.
 
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Parallax_scroll.gif" />  

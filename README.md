@@ -25,15 +25,17 @@ The first and most crucial part of this is having your artwork separated into di
 
 >###### Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. If that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! It's a bit older and uses an outdated version of Photoshop, but the process is still the same with today's versions.
 
-For this tutorial, I've provided a sample image witht the layers already separated. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery). 
-Please note that the imagery in this tutorial does **not** belong to me in any way and full ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/)
+For this tutorial, I've provided a sample image with the layers already separated. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery).  
+Please note that the imagery in this tutorial does **not** belong to me in any way and total ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/).
 
 *A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!*
-
-With that out of the way, let's start coding.
-
-<br />
-
+  
+<br />  
+  
+Alright, with that out of the way, let's start coding.
+  
+<br />  
+  
 ### Initial Setup
 
 The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class "layer." We're also going to give each div a data-type attribute with the value "parallax."

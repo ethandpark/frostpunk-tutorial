@@ -17,6 +17,13 @@ This tutorial does assume basic understanding of HTML/CSS and Javascript, so ass
 
 A parallax image is one that gives a sense of perspective as you scroll by making different layers of the image scroll at faster or slower speeds.
 
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Parallax_scroll.gif" />  
+</div>
+<div align="center"><sub><sup>https://commons.wikimedia.org/wiki/File:Parallax_scroll.gif/</sub></sup></div>
+<br />
+<br />
+
 The first and most crucial part of this is having your artwork separated into different layers; each layer will be a different distance away from the "camera." Of course, this is easiest if the picture you're using has already been separated into its own layers, like a digitial painting. In my case, however, the one I wanted to use was something that had already been flattened into a single image.
 
 >Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. So, if that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! *(It's a bit older and uses an outdated version of Photoshop, but the process is still the same as today).*

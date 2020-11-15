@@ -1,4 +1,4 @@
-# frostpunk-tutorial
+# Experimental Tutorial
 
 Animation, while not required for a website, is something that can help make a site have that extra *flair* that draws a user in and keeps them scrolling. 
 You can spend hours upon hours creating a beautiful layout with stunning images and designing a sharp typography design, all in the pursuit of making a website look great. Animations are what help it *feel* great.
@@ -6,7 +6,7 @@ You can spend hours upon hours creating a beautiful layout with stunning images 
 Here, I am going to show you how to make two different elements for a website with compelling (and cool) animations - a parallax image header and a timeline that reveals its contents after the user scrolls onto them. 
 This tutorial does assume basic understanding of HTML/CSS and Javascript, so assuming you at least know your way around the basics, let's get started.  
   
-  
+  <br />
   
 ## Element 1 - Parallax Header Image
 

@@ -57,7 +57,7 @@ The HTML section of this is actually pretty simple. We're going to create a pare
 Now it's time to add some basic styling. We'll start with the parent container.
 ```
 #main-banner {
-    height: 1080px;
+    height: 1080px; /* this should be whatever height your image is */
     overflow: hidden;
     position: relative;
 }

@@ -23,12 +23,12 @@ A parallax image is one that gives a sense of perspective as you scroll by makin
 
 The first and most crucial part of this is having your artwork separated into different layers; each layer will be a different distance away from the "camera." Of course, this is easiest if the picture you're using has already been separated into its own layers, like a digitial painting. In my case, however, the one I wanted to use was something that had already been flattened into a single image.
 
->###### Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. If that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! It's a bit older and uses an outdated version of Photoshop, but the process is still the same with today's versions.
+>###### Separating an image into different layers is most commonly done with a program like Photoshop, but that's an entire process on its own that goes outside the scope of this tutorial. If that's something you're curious about, [this video](https://www.youtube.com/watch?v=H7g_-ix9J5I&ab_channel=eHow) is a helpful starting point! It's a bit older and uses an outdated version of Photoshop, but the process is still the same with today's versions. A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!
 
 For this tutorial, I've provided a sample image with the layers already separated. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery).  
 Please note that the imagery in this tutorial does **not** belong to me in any way and total ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/).
 
-*A key thing to remember is to make sure your layers are PNGs with transparent backgrounds, not white. If they aren't transparent, the effect won't work!*
+
   
 <br />  
   

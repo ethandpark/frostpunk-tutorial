@@ -22,7 +22,6 @@ A parallax image is one that gives a sense of perspective as you scroll by makin
 </div>
 <div align="center"><sub><sup>https://commons.wikimedia.org/wiki/File:Parallax_scroll.gif/</sub></sup></div>
 <br />
-<br />
 
 The first and most crucial part of this is having your artwork separated into different layers; each layer will be a different distance away from the "camera." Of course, this is easiest if the picture you're using has already been separated into its own layers, like a digitial painting. In my case, however, the one I wanted to use was something that had already been flattened into a single image.
 

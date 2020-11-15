@@ -100,3 +100,100 @@ After that, return to the HTML and update each layer div with the proper class. 
 ```
 <br />
 
+### Animating with Javascript
+
+The first step to making this into an animation begins with Javascript. All of the Javascript for this element will go in one singular function. 
+Let's start by adding the ability to check if the user is scrolling.
+
+```
+(function() {
+  window.addEventListener(‘scroll’, event);
+
+}).call(this);
+```
+Here, the EventTarget.addEventListener() method registers the specified listener on the event target it’s called on. This target could be any element in the site, the entire site itself, or any other object that supports events.
+<br />
+
+Now we need to store the number of pixels that the site has been scrolled into the *topDistance* variable. We can use *pageYOffset* for this. Your code should now look something like this:
+
+```
+(function() {
+  window.addEventListener(‘scroll’, function(event) {
+    var topDistance;
+    return topDistance = this.pageYOffset;
+  });
+
+}).call(this);
+```
+<br />
+
+After that, we can take each layer and store it into a variable called *'layers.'* We can do this with *querySelectorAll* and the data-attribute that we put inside our HTML earlier.
+
+```
+(function() {
+  window.addEventListener(‘scroll’, function(event) {
+    var layers, topDistance;
+    topDistance = this.pageYOffset;
+    return layers = document.querySelectorAll("[data-type='parallax']");
+  });
+
+}).call(this);
+```
+<br />
+
+Now that that's done, we'll need to go back to our HTML and make one more change. Each layer needs to have a new value called *"data-depth"* specified. This is what controls how much or how little each layer moves as the user scrolls. 
+
+Before actually going back to the HTML, however, we'll begin by making something to loop through all the layers and apply the necessary *transform* to each, according to where the user has scrolled to.
+We'll create a *for* loop and start it by creating a variable where we'll store our layers. Then, we'll have it take the aforementioned *"data-depth"* value that's going to go in the HTML.
+
+```
+  var depth, layer, _i, _len;
+
+  for (_i = 0, _len = layers.length; _i < _len; _i++) {
+    layer = layers[_i];
+    depth = layer.getAttribute(‘data - depth’);
+  }
+  ```
+  <br />
+  
+ After that, we'll have the browser calculate the movement of the layers by multiplying the distance from the top of the page by our specified *"data-depth."* A layer with a value of 1.0 will scroll with the page like any normal static image, basically without any parallax-ing. All values less than 100 (or 1.0) will have a parallax effect that increases as the value decreases.
+
+```
+movement = -(topDistance * depth);
+```
+<br />
+
+The final step is to update the final value of movement to each layer's CSS paramater *"transform translate3d,"* giving it its own 'location,' in a sort of 3d sense.
+
+```
+ translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+            layer.style['-webkit-transform'] = translate3d;
+            layer.style['-moz-transform'] = translate3d;
+            layer.style['-ms-transform'] = translate3d;
+            layer.style['-o-transform'] = translate3d;
+            layer.style.transform = translate3d;
+```
+<br />
+
+All in all, your JS code should look about like this:
+
+```
+(function() {
+    window.addEventListener('scroll', function(event) {
+        var depth, i, layer, layers, len, movement, topDistance, translate3d;
+        topDistance = this.pageYOffset;
+        layers = document.querySelectorAll("[data-type='parallax']");
+        for (i = 0, len = layers.length; i < len; i++) {
+            layer = layers[i];
+            depth = layer.getAttribute('data-depth');
+            movement = -(topDistance * depth);
+            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+            layer.style['-webkit-transform'] = translate3d;
+            layer.style['-moz-transform'] = translate3d;
+            layer.style['-ms-transform'] = translate3d;
+            layer.style['-o-transform'] = translate3d;
+            layer.style.transform = translate3d;
+        }
+    });
+}).call(this);
+```

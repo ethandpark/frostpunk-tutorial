@@ -27,14 +27,13 @@ The first and most crucial part of this is having your artwork separated into *s
 
 For this tutorial, I've provided a sample image with the layers already separated. (My layer cutting wasn't perfect, but that's because I'm focusing more on the code and less on the imagery).  
 Please note that the imagery in this tutorial does **not** belong to me in any way and total ownership of it belongs to [11Bit Studios](https://www.11bitstudios.com/about-us/). 
-
-
-  
-<br />  
    
 Alright, with that out of the way, let's start coding.
 
   
+  
+<br />  
+
 ### Initial Setup
 
 The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class "layer." We're also going to give each div a data-type attribute with the value "parallax."

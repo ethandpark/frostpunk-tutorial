@@ -37,6 +37,7 @@ With that out of the way, let's start coding.
 ### Initial Setup
 
 The HTML section of this is actually pretty simple. We're going to create a parent container and give it an ID of 'main-banner.' Inside that parent container we're going to make one div for each layer in the image and give it the class "layer." We're also going to give each div a data-type attribute with the value "parallax."
+
 ```
 <div id="main-banner">
         <div class="layer" data-type="parallax"></div>
@@ -54,10 +55,11 @@ The HTML section of this is actually pretty simple. We're going to create a pare
 ```
 <br />
 
-Now it's time to add some basic styling. We'll start with the parent container.
+Now it's time to add some basic styling. We'll start with the parent container. The *height* should be whatever your image is.
+
 ```
 #main-banner {
-    height: 1080px; /* this should be whatever height your image is */
+    height: 1080px;
     overflow: hidden;
     position: relative;
 }

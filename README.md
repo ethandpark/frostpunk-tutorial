@@ -2,7 +2,7 @@
 
 Animation is something that can help make a site have some extra *flair* that draws a user in and keeps them scrolling. Static websites are great, don't misunderstand. You can spend hours upon hours creating a beautiful layout with stunning images and a sharp typography design, all in the pursuit of making a website look great. Animations, however, are what help it *feel* great.
 
-Here, I am going to show you how to make two different elements for a website with compelling (and cool) animations - a parallax image header and a timeline that fades-in its contents after the user scrolls onto them. 
+Here, I am going to show you how to make a header image with a compelling (and cool) animation - parallax.
 This tutorial does assume basic understanding of HTML/CSS and Javascript. So, assuming you at least know your way around the basics, let's get started.  
 
 <div align="center">
@@ -12,7 +12,7 @@ This tutorial does assume basic understanding of HTML/CSS and Javascript. So, as
 <br />
 <br />
   
-## Element 1 - Parallax Header Image
+## Parallax Header Image
 
 A parallax image is one that gives a sense of perspective by making different layers of the image scroll at faster or slower speeds.
 
@@ -240,4 +240,5 @@ On that note, for these images, here's what my HTML ended up looking like:
 </div>
 ```
 
+That should be it! Your header image should now have a super cool parallax effect that will definitely wow everyone who visits your site (okay, so maybe not. But it is cool though).   
 Again, if you have direct access to the artwork you're using and can manipulate the layers directly, then you're already streets ahead. It is possible to take any random image from Google and make it work, but as you can see, it's a much more involved process.

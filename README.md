@@ -240,5 +240,33 @@ On that note, for these images, here's what my HTML ended up looking like:
 </div>
 ```
 
-That should be it! Your header image should now have a super cool parallax effect that will definitely wow everyone who visits your site (okay, so maybe not. But it is cool though).   
+## Mobile
+
+For responsive design, we'll actually just turn the parallax off and replace it with a static image. This will both help performance and load times. We'll do this by creating a new div below the #main-banner and applying `display:none`, along with the necessary background and height properties.
+
+```
+#main-banner__mobile {
+    display: none;
+    background: url("#") no-repeat center top/cover;
+    height: 812px;
+}
+```
+<br />
+
+to make it static instead of parallax we’ll use simple media query and apply `display:none` to desktop version, while overriding our `display:none` with `display:block` on the mobile id.
+
+```
+@media only screen and (max-width: 768px) {
+    #main-banner {
+        display: none;
+    }
+    #main-banner__mobile {
+        display: block;
+    }
+}
+```
+
+
+That should be it! Your header image should now have a super cool responsive parallax effect that will definitely *wow* everyone who visits your site (okay, maybe not. But it is cool though). To view this exact one in action, check out [this](https://ethandpark.github.io/frostpunk/) demonstration site!
+
 Again, if you have direct access to the artwork you're using and can manipulate the layers directly, then you're already streets ahead. It is possible to take any random image from Google and make it work, but as you can see, it's a much more involved process.

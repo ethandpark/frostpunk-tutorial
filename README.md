@@ -242,7 +242,7 @@ On that note, for these images, here's what my HTML ended up looking like:
 
 ## Mobile
 
-For responsive design, we'll actually just turn the parallax off and replace it with a static image. This will both help performance and load times. We'll do this by creating a new div below the #main-banner and applying `display:none`, along with the necessary background and height properties.
+For responsive design, we'll actually just turn the parallax off and replace it with a static image. This will both help performance and load times. We'll do this by creating a new empty div right below the #main-banner and applying `display:none`, along with the necessary background and height properties.
 
 ```
 #main-banner__mobile {

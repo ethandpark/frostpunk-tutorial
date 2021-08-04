@@ -1,4 +1,4 @@
-# Experimental Tutorial
+# Frostpunk Tutorial
 
 Animation is something that can help make a site have some extra *flair* that draws a user in and keeps them scrolling. Static websites are great, don't misunderstand. You can spend hours upon hours creating a beautiful layout with stunning images and a sharp typography design, all in the pursuit of making a website look great. Animations, however, are what help it *feel* great.
 
